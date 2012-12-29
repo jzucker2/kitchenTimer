@@ -14,6 +14,10 @@
 
 @property (strong, nonatomic) UIPopoverController *flipsidePopoverController;
 
-@property (strong, nonatomic) UIImagePickerController *takePictureController;
+@property (strong, nonatomic) IBOutlet UIImageView *stoveImageView;
+
+//@property (strong, nonatomic) UIImagePickerController *takePictureController;
+
+-(IBAction) takePicture:(id) sender;
 
 @end
