@@ -1,4 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="Test1.xcdatamodel" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <elements/>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1811" systemVersion="12C60" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Timer" representedClassName="Timer" syncable="YES">
+        <attribute name="duration" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="elapsedTime" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="isActive" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="projectedEndTime" attributeType="Date" syncable="YES"/>
+        <attribute name="startDate" attributeType="Date" syncable="YES"/>
+        <attribute name="stopDate" attributeType="Date" syncable="YES"/>
+        <relationship name="timerImage" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="TimerImage" inverseName="timerFromTimerImage" inverseEntity="TimerImage" syncable="YES"/>
+    </entity>
+    <entity name="TimerImage" representedClassName="TimerImage" syncable="YES">
+        <attribute name="height" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="image" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="width" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="xOrigin" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="yOrigin" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="timerFromTimerImage" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Timer" inverseName="timerImage" inverseEntity="Timer" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Timer" positionX="160" positionY="192" width="128" height="150"/>
+        <element name="TimerImage" positionX="160" positionY="192" width="128" height="135"/>
+    </elements>
 </model>

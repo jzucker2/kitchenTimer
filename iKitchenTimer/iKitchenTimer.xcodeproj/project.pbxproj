@@ -22,6 +22,8 @@
 		01E798C1168EB4A8007D16D9 /* iKitchenTimer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 01E798BF168EB4A8007D16D9 /* iKitchenTimer.xcdatamodeld */; };
 		01E798C4168EB4A8007D16D9 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E798C3168EB4A8007D16D9 /* MainViewController.m */; };
 		01E798C7168EB4A8007D16D9 /* FlipsideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E798C6168EB4A8007D16D9 /* FlipsideViewController.m */; };
+		3396E047168EC82600843C07 /* Timer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3396E046168EC82600843C07 /* Timer.m */; };
+		3396E04B168EC82700843C07 /* TimerImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 3396E04A168EC82700843C07 /* TimerImage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +48,10 @@
 		01E798C3168EB4A8007D16D9 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		01E798C5168EB4A8007D16D9 /* FlipsideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlipsideViewController.h; sourceTree = "<group>"; };
 		01E798C6168EB4A8007D16D9 /* FlipsideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlipsideViewController.m; sourceTree = "<group>"; };
+		3396E045168EC82600843C07 /* Timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Timer.h; sourceTree = "<group>"; };
+		3396E046168EC82600843C07 /* Timer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Timer.m; sourceTree = "<group>"; };
+		3396E049168EC82700843C07 /* TimerImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerImage.h; sourceTree = "<group>"; };
+		3396E04A168EC82700843C07 /* TimerImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerImage.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +108,7 @@
 				01E798C3168EB4A8007D16D9 /* MainViewController.m */,
 				01E798C5168EB4A8007D16D9 /* FlipsideViewController.h */,
 				01E798C6168EB4A8007D16D9 /* FlipsideViewController.m */,
-				01E798BF168EB4A8007D16D9 /* iKitchenTimer.xcdatamodeld */,
+				3396E04C168EC82E00843C07 /* Core Data */,
 				01E798A8168EB4A8007D16D9 /* Supporting Files */,
 			);
 			path = iKitchenTimer;
@@ -120,6 +126,18 @@
 				01E798B7168EB4A8007D16D9 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3396E04C168EC82E00843C07 /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				01E798BF168EB4A8007D16D9 /* iKitchenTimer.xcdatamodeld */,
+				3396E049168EC82700843C07 /* TimerImage.h */,
+				3396E04A168EC82700843C07 /* TimerImage.m */,
+				3396E045168EC82600843C07 /* Timer.h */,
+				3396E046168EC82600843C07 /* Timer.m */,
+			);
+			name = "Core Data";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +212,8 @@
 				01E798C1168EB4A8007D16D9 /* iKitchenTimer.xcdatamodeld in Sources */,
 				01E798C4168EB4A8007D16D9 /* MainViewController.m in Sources */,
 				01E798C7168EB4A8007D16D9 /* FlipsideViewController.m in Sources */,
+				3396E047168EC82600843C07 /* Timer.m in Sources */,
+				3396E04B168EC82700843C07 /* TimerImage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,6 +339,7 @@
 				01E798CC168EB4A8007D16D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
